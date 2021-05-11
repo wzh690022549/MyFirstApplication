@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <!--标题-->
+    <DirectionalLayout
+        ohos:height="match_parent"
+        ohos:width="match_content"
+        ohos:orientation="horizontal">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:orientation="horizontal">
+
+            <Image
+                ohos:id="$+id:gallery_sync"
+                ohos:height="24vp"
+                ohos:width="24vp"
+                ohos:image_src="$media:ic_sync"
+                ohos:right_margin="7vp"
+                ohos:top_margin="40vp"/>
+
+            <Image
+                ohos:id="$+id:gallery_more"
+                ohos:height="24vp"
+                ohos:width="24vp"
+                ohos:image_src="$media:ic_more"
+                ohos:right_margin="30vp"
+                ohos:top_margin="40vp"/>
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+    <!-- 图库分栏 -->
+    <AdaptiveBoxLayout
+        ohos:height="match_parent"
+        ohos:width="match_content">
+
+        <!-- 图库 : 推荐 -->
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content">
+
+            <Image
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:image_src="$media:pic_recommend"/>
+        </DirectionalLayout>
+
+        <!-- 图库 : 照片 -->
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_content">
+
+            <Image
+                ohos:height="match_parent"
+                ohos:width="match_parent"
+                ohos:image_src="$media:pic_photo"/>
+        </DirectionalLayout>
+
+    </AdaptiveBoxLayout>
+
+</DirectionalLayout>
